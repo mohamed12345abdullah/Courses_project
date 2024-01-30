@@ -1,13 +1,13 @@
 require('dotenv').config();
 
 // const uri="mongodb+srv://mohamed12345abdullah:abdo123@cluster0.hblrffd.mongodb.net/courses?retryWrites=true&w=majority";
-// const uri=process.env.MONGO_URL;
-const uri="mongodb+srv://mohamed12345abdullah:abdo123@cluster0.hblrffd.mongodb.net/courses?retryWrites=true&w=majority";
+const uri=process.env.MONGO_URL;
+// const uri="mongodb+srv://mohamed12345abdullah:abdo123@cluster0.rfvm6na.mongodb.net/courses?retryWrites=true&w=majority";
 
 
 
 // mongoose
- const mongoose=require("mongoose");
+ const mongoose=require("mongoose");  
  mongoose.connect(uri);
  const course=require("../mongoose.models/course.model");
  const client=require('../mongoose.models/client.model');

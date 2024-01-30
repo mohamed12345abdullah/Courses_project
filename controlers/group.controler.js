@@ -2,8 +2,8 @@
 
 
 
-// const uri=process.env.MONGO_URL;
-const uri="mongodb+srv://mohamed12345abdullah:abdo123@cluster0.hblrffd.mongodb.net/courses?retryWrites=true&w=majority";
+const uri=process.env.MONGO_URL;
+// const uri="mongodb+srv://mohamed12345abdullah:abdo123@cluster0.hblrffd.mongodb.net/courses?retryWrites=true&w=majority";
 
 
 
