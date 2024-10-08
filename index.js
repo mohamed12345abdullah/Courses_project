@@ -33,7 +33,7 @@ app.use("/groups",groupRouter);
 
 app.get("/", (req, res) => {
   
-    res.end("start server 2");
+    res.end("start server with cors");
 });
 
 app.listen(5000, () => {
