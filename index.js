@@ -3,13 +3,16 @@ const app = express();
 
 var bodyParser = require('body-parser')
 var cors=require("cors");
+ 
+// CORS middleware
+app.use(cors())
 
+
+        
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
- 
-// CORS middleware
-app.use("/",cors());
+
 
 
 
@@ -20,7 +23,7 @@ const clientRouter = require('./routes/clientRouter');
 const taskRouter = require("./routes/tasksRouter");
 const reqRouter = require("./routes/req.Router");
 const groupRouter = require("./routes/groupRouter");
-app.use(cors());
+
 app.use("/courses", coursesRoute);
 app.use("/clients", clientRouter);
 app.use("/tasks", taskRouter);
